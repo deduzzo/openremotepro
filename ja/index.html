@@ -67,6 +67,7 @@
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
         <span><small>Google Play</small>近日公開</span>
       </span>
+      <figure class="qr"><img src="../img/qr-appstore.svg" width="37" height="37" alt="App StoreからOpen Remote PROをダウンロードするためのQRコード"><figcaption>読み取ってダウンロード</figcaption></figure>
     </div>
     <p class="hero-price">€4.99の買い切り。アカウント不要、広告なし。</p>
   </div>
@@ -150,6 +151,28 @@
   <ul class="ticks duo-ticks"><li>開閉したその瞬間にMacの仮想モニタのサイズが切り替わります。再接続も黒い帯もありません。</li><li>コントロールバーは外側と内側のディスプレイに合わせて自動で配置が変わります。</li><li>画面を回転するボタンもあり、iPhoneを横にすると回転を提案します。</li></ul>
 </section>
 
+<section id="input" class="feature feature-input">
+  <div class="feature-text">
+    <h2>マウス、トラックパッド、キーボード</h2>
+    <p>BluetoothやUSBのマウス、トラックパッド、キーボードに完全対応。Magic Keyboard、Magic Trackpad、Magic Mouseも使えます。</p>
+    <ul class="ticks"><li>ポインタの移動とホバーに対応し、Macと同じ感覚で操作できます。</li><li>左クリックと右クリック。</li><li>トラックパッドの2本指スクロールと、マウスホイールによるスクロール（なめらかに、または1段ずつ）。</li><li>物理キーボードは正しい配列で入力でき、アクセント付きの文字や記号も正しく届きます。</li><li>修飾キー ⌘ ⌥ ⌃ ⇧。</li></ul>
+    <p class="note">iPadとiPhone用のAppで利用できます。</p>
+  </div>
+  <div class="input-visual reveal">
+    <div class="keys" aria-hidden="true">
+      <span class="key" data-key="Meta"><b>⌘</b><i>command</i></span>
+      <span class="key" data-key="Alt"><b>⌥</b><i>option</i></span>
+      <span class="key" data-key="Control"><b>⌃</b><i>control</i></span>
+      <span class="key" data-key="Shift"><b>⇧</b><i>shift</i></span>
+    </div>
+    <div class="pads" aria-hidden="true">
+      <div class="pad pad-mouse"><svg viewBox="0 0 60 96"><rect x="3" y="3" width="54" height="90" rx="27"/><path d="M30 3v30M3 33h54"/><rect class="wheel" x="26.5" y="12" width="7" height="14" rx="3.5"/></svg></div>
+      <div class="pad pad-track"><span class="finger"></span><span class="finger"></span><svg class="cursor" viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.6 3.4 6.4-2.6 1.4-3.4-6.4L6 18z"/></svg></div>
+    </div>
+    <p class="key-hint">お使いのキーボードで ⌘、⌥、⌃、⇧ を押してみてください。</p>
+  </div>
+</section>
+
 <section class="feature feature-manage">
   <div class="feature-text">
     <h2>すべてのMacをひと目で</h2>
@@ -164,7 +187,7 @@
   <div class="more-cols">
     <div class="more">
       <h3>自然な操作</h3>
-      <ul><li>トラックパッドモードとダイレクトタッチ、2本指で副ボタンのクリック、なめらかなピンチズーム。</li><li>慣性付きの正確なスクロール。3本指でページをスクロール。</li><li>物理キーボードでも画面上のキーボードでも正しい配列で入力でき、パスワード欄でも記号が正しく届きます。</li><li>esc、tab、矢印キー、F1〜F12、修飾キーを備えたバー。Mission Control、Spotlight、スナップショットなどのショートカットもすぐに使えます。</li><li>Macとデバイスの間でクリップボードを共有。画面のスナップショットを保存したり共有したりできます。</li><li>何も操作せずに画面を見るだけの観察モード。</li></ul>
+      <ul><li>トラックパッドモードとダイレクトタッチ、2本指で副ボタンのクリック、なめらかなピンチズーム。</li><li>慣性付きの正確なスクロール。3本指でページをスクロール。</li><li>esc、tab、矢印キー、F1〜F12、修飾キーを備えたバー。Mission Control、Spotlight、スナップショットなどのショートカットもすぐに使えます。</li><li>Macとデバイスの間でクリップボードを共有。画面のスナップショットを保存したり共有したりできます。</li><li>何も操作せずに画面を見るだけの観察モード。</li></ul>
     </div>
     <div class="more">
       <h3>PCやLinuxにも</h3>
@@ -202,10 +225,17 @@
     <h2 id="t-price">一度の購入で</h2>
     <p class="price-tag">€4.99</p>
     <p class="price-sub">App Storeで一度お支払いいただくだけです。</p>
+    <div class="price-get">
     <a class="store store-apple" href="https://apps.apple.com/app/id6828052464">
       <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
       <span><small>ダウンロード</small>App Store</span>
     </a>
+    <figure class="qr"><img src="../img/qr-appstore.svg" width="37" height="37" alt="App StoreからOpen Remote PROをダウンロードするためのQRコード"><figcaption>読み取ってダウンロード</figcaption></figure>
+    <span class="store store-soon" aria-disabled="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+      <span><small>Google Play</small>近日公開</span>
+    </span>
+    </div>
     <p class="note">ユーロ圏での価格です。その他の地域ではApp Storeに表示される価格が適用されます。</p>
   </div>
   <div class="req">
@@ -237,7 +267,7 @@
     </nav>
   </div>
   <p class="langs-inline"><a href="../" hreflang="it" lang="it">Italiano</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a> <a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../ko/" hreflang="ko" lang="ko">한국어</a></p>
-  <p class="legal">© 2026 Roberto De Domenico. Apple、Mac、macOS、iPad、iPhone、App Store、Apple Remote Desktopは、米国およびその他の国で登録されたApple Inc.の商標です。AndroidおよびGoogle PlayはGoogle LLCの商標です。Open Remote PROは独立した製品であり、Appleとの提携関係やAppleによる承認はありません。</p>
+  <p class="legal">© 2026 Roberto De Domenico. Apple、Mac、macOS、iPad、iPhone、App Store、Magic Keyboard、Magic Trackpad、Magic Mouse、Apple Remote Desktopは、米国およびその他の国で登録されたApple Inc.の商標です。AndroidおよびGoogle PlayはGoogle LLCの商標です。Open Remote PROは独立した製品であり、Appleとの提携関係やAppleによる承認はありません。</p>
 </footer>
 <script src="../main.js" defer></script>
 </body>

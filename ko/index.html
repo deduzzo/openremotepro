@@ -67,6 +67,7 @@
         <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
         <span><small>Google Play</small>출시 예정</span>
       </span>
+      <figure class="qr"><img src="../img/qr-appstore.svg" width="37" height="37" alt="App Store에서 Open Remote PRO를 다운로드하는 QR 코드"><figcaption>스캔하여 다운로드</figcaption></figure>
     </div>
     <p class="hero-price">€4.99, 한 번만 결제. 계정 없음, 광고 없음.</p>
   </div>
@@ -150,6 +151,28 @@
   <ul class="ticks duo-ticks"><li>휴대폰을 접거나 펼치는 순간 Mac의 가상 모니터 크기가 바뀝니다. 다시 연결할 필요도, 검은 여백도 없습니다.</li><li>제어 막대가 외부와 내부 디스플레이에 맞춰 스스로 재배치됩니다.</li><li>화면 회전 버튼, 그리고 휴대폰을 돌리면 나타나는 회전 제안.</li></ul>
 </section>
 
+<section id="input" class="feature feature-input">
+  <div class="feature-text">
+    <h2>마우스, 트랙패드, 키보드</h2>
+    <p>Bluetooth 및 USB 마우스, 트랙패드, 키보드를 완벽하게 지원합니다. Magic Keyboard, Magic Trackpad, Magic Mouse도 사용할 수 있습니다.</p>
+    <ul class="ticks"><li>포인터 이동과 호버를 지원해 Mac에서처럼 사용할 수 있습니다.</li><li>왼쪽 클릭과 오른쪽 클릭.</li><li>트랙패드의 두 손가락 스크롤과 마우스 휠 스크롤(부드럽게 또는 한 칸씩).</li><li>물리 키보드는 올바른 배열로 입력되며, 악센트 문자와 기호도 정확하게 전달됩니다.</li><li>보조 키 ⌘ ⌥ ⌃ ⇧.</li></ul>
+    <p class="note">iPad 및 iPhone용 앱에서 사용할 수 있습니다.</p>
+  </div>
+  <div class="input-visual reveal">
+    <div class="keys" aria-hidden="true">
+      <span class="key" data-key="Meta"><b>⌘</b><i>command</i></span>
+      <span class="key" data-key="Alt"><b>⌥</b><i>option</i></span>
+      <span class="key" data-key="Control"><b>⌃</b><i>control</i></span>
+      <span class="key" data-key="Shift"><b>⇧</b><i>shift</i></span>
+    </div>
+    <div class="pads" aria-hidden="true">
+      <div class="pad pad-mouse"><svg viewBox="0 0 60 96"><rect x="3" y="3" width="54" height="90" rx="27"/><path d="M30 3v30M3 33h54"/><rect class="wheel" x="26.5" y="12" width="7" height="14" rx="3.5"/></svg></div>
+      <div class="pad pad-track"><span class="finger"></span><span class="finger"></span><svg class="cursor" viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.6 3.4 6.4-2.6 1.4-3.4-6.4L6 18z"/></svg></div>
+    </div>
+    <p class="key-hint">키보드에서 ⌘, ⌥, ⌃ 또는 ⇧를 눌러 보세요.</p>
+  </div>
+</section>
+
 <section class="feature feature-manage">
   <div class="feature-text">
     <h2>모든 Mac을 한눈에</h2>
@@ -164,7 +187,7 @@
   <div class="more-cols">
     <div class="more">
       <h3>자연스러운 제어</h3>
-      <ul><li>트랙패드 모드 또는 직접 터치, 두 손가락으로 보조 클릭, 끊김 없는 핀치 확대/축소.</li><li>관성이 적용된 정밀한 스크롤. 세 손가락으로 페이지 스크롤.</li><li>물리 키보드와 화면 키보드 모두 올바른 배열로 입력되며, 암호 입력란에서도 마찬가지입니다.</li><li>esc, tab, 화살표, F1–F12, 보조 키가 있는 막대. Mission Control, Spotlight, 스냅샷 등 바로 쓰는 단축키.</li><li>Mac과 기기 간 클립보드 공유. 화면 스냅샷을 저장하거나 공유할 수 있습니다.</li><li>아무것도 건드리지 않고 화면만 보는 관찰 모드.</li></ul>
+      <ul><li>트랙패드 모드 또는 직접 터치, 두 손가락으로 보조 클릭, 끊김 없는 핀치 확대/축소.</li><li>관성이 적용된 정밀한 스크롤. 세 손가락으로 페이지 스크롤.</li><li>esc, tab, 화살표, F1–F12, 보조 키가 있는 막대. Mission Control, Spotlight, 스냅샷 등 바로 쓰는 단축키.</li><li>Mac과 기기 간 클립보드 공유. 화면 스냅샷을 저장하거나 공유할 수 있습니다.</li><li>아무것도 건드리지 않고 화면만 보는 관찰 모드.</li></ul>
     </div>
     <div class="more">
       <h3>PC와 Linux도 지원</h3>
@@ -202,10 +225,17 @@
     <h2 id="t-price">한 번 구입으로</h2>
     <p class="price-tag">€4.99</p>
     <p class="price-sub">App Store에서 한 번만 결제하면 됩니다.</p>
+    <div class="price-get">
     <a class="store store-apple" href="https://apps.apple.com/app/id6828052464">
       <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 20h14"/></svg>
       <span><small>다운로드</small>App Store</span>
     </a>
+    <figure class="qr"><img src="../img/qr-appstore.svg" width="37" height="37" alt="App Store에서 Open Remote PRO를 다운로드하는 QR 코드"><figcaption>스캔하여 다운로드</figcaption></figure>
+    <span class="store store-soon" aria-disabled="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 7v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+      <span><small>Google Play</small>출시 예정</span>
+    </span>
+    </div>
     <p class="note">유로화 사용 국가의 가격입니다. 그 밖의 지역에서는 App Store에 표시된 가격이 적용됩니다.</p>
   </div>
   <div class="req">
@@ -237,7 +267,7 @@
     </nav>
   </div>
   <p class="langs-inline"><a href="../" hreflang="it" lang="it">Italiano</a> <a href="../en/" hreflang="en" lang="en">English</a> <a href="../de/" hreflang="de" lang="de">Deutsch</a> <a href="../fr/" hreflang="fr" lang="fr">Français</a> <a href="../es/" hreflang="es" lang="es">Español</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="../ko/" hreflang="ko" lang="ko" aria-current="page">한국어</a></p>
-  <p class="legal">© 2026 Roberto De Domenico. Apple, Mac, macOS, iPad, iPhone, App Store 및 Apple Remote Desktop은 미국 및 기타 국가에서 등록된 Apple Inc.의 상표입니다. Android 및 Google Play는 Google LLC의 상표입니다. Open Remote PRO는 독립적인 제품으로, Apple과 제휴하거나 Apple의 승인을 받지 않았습니다.</p>
+  <p class="legal">© 2026 Roberto De Domenico. Apple, Mac, macOS, iPad, iPhone, App Store, Magic Keyboard, Magic Trackpad, Magic Mouse 및 Apple Remote Desktop은 미국 및 기타 국가에서 등록된 Apple Inc.의 상표입니다. Android 및 Google Play는 Google LLC의 상표입니다. Open Remote PRO는 독립적인 제품으로, Apple과 제휴하거나 Apple의 승인을 받지 않았습니다.</p>
 </footer>
 <script src="../main.js" defer></script>
 </body>

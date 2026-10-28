@@ -93,6 +93,19 @@
     }
   }
 
+  // tastiera: i tasti modificatori disegnati si accendono quando li premi davvero
+  const keys = document.querySelectorAll('.key[data-key]');
+  if (keys.length) {
+    const light = (name, on) => keys.forEach(k => { if (k.dataset.key === name) k.classList.toggle('down', on); });
+    addEventListener('keydown', e => light(e.key, true));
+    addEventListener('keyup', e => light(e.key, false));
+    addEventListener('blur', () => keys.forEach(k => k.classList.remove('down')));
+    keys.forEach(k => {
+      k.addEventListener('pointerdown', () => k.classList.add('down'));
+      ['pointerup', 'pointerleave', 'pointercancel'].forEach(t => k.addEventListener(t, () => k.classList.remove('down')));
+    });
+  }
+
   // galleria: frecce
   const gal = document.querySelector('.gallery-track');
   document.querySelectorAll('[data-gal]').forEach(b => b.addEventListener('click', () => {
