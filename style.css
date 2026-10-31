@@ -89,9 +89,9 @@ main{display:block}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
 .store{display:inline-flex;align-items:center;gap:12px;padding:11px 20px 11px 16px;border-radius:16px;text-decoration:none;color:var(--text);font-weight:650;font-size:1.15rem;line-height:1.1}
 .store small{display:block;font-size:.72rem;font-weight:500;color:var(--muted);margin-bottom:2px}
-.store-apple{background:linear-gradient(#11164a,#0c1036) padding-box,var(--grad) border-box;border:1.5px solid transparent;box-shadow:0 10px 40px -12px rgba(138,99,255,.7);transition:transform .25s var(--ease),box-shadow .25s}
-.store-apple:hover{color:#fff;transform:translateY(-2px);box-shadow:0 14px 50px -10px rgba(238,79,181,.65),0 0 0 4px rgba(138,99,255,.12)}
-.store-apple svg{color:var(--cyan)}
+.store-apple,.store-play{background:linear-gradient(#11164a,#0c1036) padding-box,var(--grad) border-box;border:1.5px solid transparent;box-shadow:0 10px 40px -12px rgba(138,99,255,.7);transition:transform .25s var(--ease),box-shadow .25s}
+.store-apple:hover,.store-play:hover{color:#fff;transform:translateY(-2px);box-shadow:0 14px 50px -10px rgba(238,79,181,.65),0 0 0 4px rgba(138,99,255,.12)}
+.store-apple svg,.store-play svg{color:var(--cyan)}
 .store-soon{border:1px dashed rgba(170,180,255,.3);color:var(--muted);background:rgba(255,255,255,.02)}
 .hero-price{margin-top:18px;color:var(--muted);font-size:.95rem}
 
@@ -286,11 +286,11 @@ main{display:block}
   .qr{display:block}
   .hero .cta-row{display:grid;grid-template-columns:auto auto;justify-content:start;align-items:start;gap:12px 22px}
   .hero .cta-row .store{justify-self:start}
-  .hero .store-apple{grid-area:1/1}.hero .store-soon{grid-area:2/1}.hero .qr{grid-area:1/2/3/3}
+  .hero .store-apple{grid-area:1/1}.hero .store-play{grid-area:2/1}.hero .qr{grid-area:1/2/3/3}
 }
 .price-get{display:grid;grid-template-columns:auto;justify-content:start;align-items:start;gap:12px 22px}
 .price-get .store{justify-self:start}
-@media (min-width:960px){.price-get{grid-template-columns:auto auto}.price-get .store-apple{grid-area:1/1}.price-get .store-soon{grid-area:2/1}.price-get .qr{grid-area:1/2/3/3}}
+@media (min-width:960px){.price-get{grid-template-columns:auto auto}.price-get .store-apple{grid-area:1/1}.price-get .store-play{grid-area:2/1}.price-get .qr{grid-area:1/2/3/3}}
 
 /* mouse, trackpad e tastiera */
 .input-visual{position:relative;padding:clamp(20px,3vw,36px);border-radius:28px;background:linear-gradient(160deg,rgba(150,160,255,.09),rgba(150,160,255,.02));border:1px solid var(--line);
