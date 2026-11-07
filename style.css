@@ -59,7 +59,7 @@ p{margin:0}
 .brand img{border-radius:8px}
 .top-nav{display:flex;gap:clamp(12px,2vw,26px);margin-left:auto}
 .top-nav a,.doc-nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
-.top-nav a:hover,.doc-nav a:hover,.doc-nav a[aria-current]{color:var(--text)}
+.top-nav a:hover,.top-nav a[aria-current],.doc-nav a:hover,.doc-nav a[aria-current]{color:var(--text)}
 .doc-nav{display:flex;flex-wrap:wrap;gap:6px 18px;margin-left:auto}
 .lang{position:relative}
 .lang summary{list-style:none;display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--muted);font-size:.85rem;font-weight:600;padding:7px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel)}
@@ -73,7 +73,7 @@ p{margin:0}
 @keyframes drop{from{opacity:0;transform:translateY(-6px)}}
 .btn-small{font-size:.875rem;font-weight:600;color:#fff;text-decoration:none;padding:8px 14px;border-radius:11px;background:linear-gradient(var(--bg-2),var(--bg-2)) padding-box,var(--grad) border-box;border:1.5px solid transparent;white-space:nowrap;transition:box-shadow .25s}
 .btn-small:hover{box-shadow:0 0 22px -4px rgba(138,99,255,.8);color:#fff}
-@media (max-width:860px){.top-nav{display:none}.lang{margin-left:auto}}
+@media (max-width:860px){.top-nav a:not(.nav-support){display:none}}
 @media (max-width:440px){.top .btn-small{display:none}}
 
 /* blocchi della landing */
