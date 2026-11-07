@@ -1,0 +1,19 @@
+name: "✨ Proponi una funzione / Request a feature"
+description: "Un'idea per migliorare Open Remote PRO · An idea to improve the app"
+labels: ["richiesta"]
+body:
+  - type: dropdown
+    id: piattaforma
+    attributes:
+      label: "Dispositivo / Device"
+      multiple: true
+      options: ["iPad", "iPhone", "Mac", "Android"]
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Cosa vorresti / What would you like"
+    validations: { required: true }
+  - type: textarea
+    id: perche
+    attributes:
+      label: "A cosa ti servirebbe / Why"

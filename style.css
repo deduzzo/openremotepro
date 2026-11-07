@@ -342,3 +342,23 @@ main{display:block}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
 @media (max-width:340px){.brand{font-size:.88rem}.brand img{width:26px;height:26px}}
+/* segnalazioni (pagina Supporto) */
+.report-actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+.report-actions a{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-weight:600;font-size:.95rem;text-decoration:none;color:var(--text);border:1px solid var(--line);background:var(--panel)}
+.report-actions a.primary{border:0;background:var(--grad);color:#070920}
+.issues-h{font-size:1rem;margin:22px 0 10px;color:var(--muted);font-weight:600}
+.issues-list{display:grid;gap:10px}
+.issue{display:block;padding:14px 16px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.03);text-decoration:none;color:var(--text);transition:border-color .2s,transform .2s}
+.issue:hover{border-color:rgba(170,180,255,.45);transform:translateY(-1px)}
+.issue-head{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:6px}
+.issue-status,.issue-kind{font-size:.72rem;font-weight:600;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.issue-status.s-open{color:#ffd479;border-color:rgba(255,212,121,.35)}
+.issue-status.s-confermato{color:#ff9ad5;border-color:rgba(255,154,213,.35)}
+.issue-status.s-in-lavorazione{color:#b9a4ff;border-color:rgba(185,164,255,.4)}
+.issue-status.s-risolto{color:#7ae6ff;border-color:rgba(122,230,255,.4)}
+.issue-status.s-rilasciato{color:#7cf0b0;border-color:rgba(124,240,176,.4)}
+.issue-num{margin-left:auto;font-size:.8rem;color:var(--muted)}
+.issue-title{display:block;font-weight:600;color:#e6e8ff}
+#issues .muted{margin-top:10px}
+.issue-status.s-novita{color:#7cf0b0;border-color:rgba(124,240,176,.4)}
+.issue-status.s-programma{color:#b9a4ff;border-color:rgba(185,164,255,.4);border-style:dashed}

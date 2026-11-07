@@ -1,0 +1,34 @@
+name: "🐞 Segnala un problema / Report a bug"
+description: "Qualcosa non funziona in Open Remote PRO · Something doesn't work"
+labels: ["bug", "da-verificare"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Le segnalazioni sono **pubbliche**: non scrivere password, indirizzi IP, nomi di computer o email.
+        Thanks! Reports are **public**: don't include passwords, IP addresses, computer names or emails.
+  - type: dropdown
+    id: piattaforma
+    attributes:
+      label: "Dispositivo / Device"
+      options: ["iPad", "iPhone", "Mac", "Android (telefono / phone)", "Android (tablet o pieghevole / tablet or foldable)"]
+    validations: { required: true }
+  - type: input
+    id: versione
+    attributes:
+      label: "Versione dell'app e del sistema / App and OS version"
+      placeholder: "es. Open Remote PRO 1.1, iPadOS 26.1, macOS 27.0"
+  - type: textarea
+    id: cosa
+    attributes:
+      label: "Cosa succede / What happens"
+    validations: { required: true }
+  - type: textarea
+    id: passi
+    attributes:
+      label: "Come riprodurlo / Steps to reproduce"
+      placeholder: "1. …\n2. …\n3. …"
+  - type: textarea
+    id: atteso
+    attributes:
+      label: "Cosa ti aspettavi / What you expected"
